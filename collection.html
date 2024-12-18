@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAY'S SNEAKER HUB</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><i>KAY'S SNEAKER HUB</i></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./collection.html">Our Collection</a></li>
+                <li><a href="./aboutus.html">About </a></li>
+                <li><a href="./testimonials.html">Testimonials</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="products" class="container">
+        <h2><i>Our Collection</i></h2>
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search Sneakers...">
+            <select id="sortSelect">
+                <option value="">Sort By</option>
+                <option value="priceAsc">Price: Low to High</option>
+                <option value="priceDesc">Price: High to Low</option>  
+            </select>
+
+        </div>
+        <div id="productList" class="product-grid"></div>
+        <button id="loadMoreButton">Load More</button>
+    </section>
+
+    <script src="script.js"></script>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartList"></ul>
+        <p id="cartTotal">Total: $0</p>
+    </section>
+   
+
+
+    <footer>
+        <p>&copy; <i>2024 Sneaker Shop. All rights reserved</i>.</p>
+    </footer>
+
+    
+</body>
+</html>
